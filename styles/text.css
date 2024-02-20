@@ -1,0 +1,163 @@
+.tahoma{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.top{
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.top_sale{
+    font-family: Arial;
+    font-style: italic;
+    color: red;
+    margin-top: 10px;
+}
+.html_top{
+    font-family:Verdana;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.html_title{
+    font-family: verdana;
+    font-size: 14px;
+    color: grey;
+    margin-top: 5px;
+}
+.html_p{
+    font-family: verdana;
+    font-size: 13px;
+    width: 180px;
+}
+.html_button{
+    background-color: green;
+    color: white;
+    border:none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 3px;
+    transition: background-color 0.15s, opacity 0.15s;
+}
+.html_button:hover{
+    background-color: rgb(0, 62, 0);
+}
+.html_button:active{
+    opacity: 0.4;
+}
+.apple_title{
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+}
+.apple_description{
+    font-family: Arial;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.learn_more
+{
+    font-family: Arial;
+    font-size: 10px;
+    color: rgb(0, 128, 255);
+    text-align: center;
+    margin-top: 10px;
+}
+.learn_more:hover{
+    text-decoration: underline;
+}
+.macbook_new{
+    font-family: Arial;
+    font-weight: bold;
+    color:rgb(255, 162, 0);
+    text-align: center;
+    margin-bottom: 0;
+}
+.macbook{
+    margin-top: 5px;
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom:0;
+}
+.macbook_description{
+    margin-top: 5px;
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+}
+.macbook_price{
+    margin-top: 15px;
+    font-family: Arial;
+    text-align: center;
+    margin-bottom: 0;
+}
+.macbook_buy{
+    margin-top: 15px;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.name{
+    font-family: Arial;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.username{
+    font-weight: normal;
+    color: grey;
+}
+.tweet{
+    margin-top: 10px;
+    font-family: Arial;
+}
+.tweet2{
+    margin-top: 10px;
+    font-family: Arial;
+}
+.username_mention{
+    color:rgb(0, 140, 255);
+}
+.username_mention:hover{
+    text-decoration: underline;
+}
+.dollars{
+    font-family: Arial;
+    font-size:40px;
+    margin-bottom: 0;
+}
+.usd{
+    color: grey;
+    font-size: 20px;
+}
+.profit{
+    font-family: Arial;
+    margin-top: 5px;;
+    color: rgb(31, 100, 36);
+    margin-bottom: 0;
+}
+.loss_statement{
+    font-family: Arial;
+    margin-top: 10px;
+    color: rgb(53, 53, 53);
+}
+.loss{
+    color:rgb(121, 0, 0);
+}

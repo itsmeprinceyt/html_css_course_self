@@ -1,236 +1,49 @@
-<style>
-    .subscribe{
-        background-color: rgb(200, 0, 0);
-        border: none;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        color: white;
-        font-size: 18px;
-        border-radius: 3px;
-        cursor: pointer;
-        transition: opacity 0.15s;
-    }
-    .subscribe:hover{
-        opacity: 0.6;
-    }
-    .join{
-        background-color: white;
-        border-color: rgb(39, 132, 255);
-        border-style: solid;
-        color: rgb(39, 132, 255);
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 14px;
-        padding-bottom: 14px;
-        font-size: 17px;
-        border-radius: 4px;
-        cursor:pointer;
-        
-        transition: background-color 0.15s, color 0.15s;
-    }
-
-    .join:hover{
-        background-color: rgb(39,132,255);
-        color: white;
-    }
-    .twitter_button{
-        background-color: #1DA1F2;
-        color: white;
-        border: none;
-        height: 50px;
-        width: 90px;
-        border-radius: 25px;
-        cursor: pointer;
-        font-size: 17px;
-        font-weight: bold;
-        transition: box-shadow 0.15s;
-    }
-    .twitter_button:hover{
-        box-shadow: 5px 5px 10px rgba(0,0,0, 0.35);
-    }
-    .Uber{
-        background-color: black;
-        color: white;
-        border: none;
-        height: 50px;
-        width: 150px;
-        font-size: 16px;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background-color 0.15s;
-    }
-    .Uber:hover{
-        background-color: rgb(34, 34, 34);
-    }
-    .amazon{
-        background-color: rgb(255,216,20);
-        border: none;
-        height: 40px;
-        width: 200px;
-        border-radius: 25px;
-        font-size:16px;
-        cursor: pointer;
-        transition: background-color 0.15s;
-    }
-    .amazon:hover{
-        background-color: rgb(225, 169, 0);
-    }
-    .github{
-        background: rgb(46,164,79);
-        border: none;
-        height: 50px;
-        width: 120px;
-        color: white;
-        font-size: 20px;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: box-shadow 0.15s;
-    }
-    .github:hover{
-        box-shadow: 5px 8px 10px rgba(0,0,0, 0.35);
-    }
-    .boostrap_1{
-        background-color: rgb(121,82,179);
-        color: white;
-        border: none;
-        height: 50px;
-        width: 120px;
-        font-size: 16px;
-        border-radius: 5px;
-        margin-right: 10px;
-        cursor: pointer;
-        transition: background-color 0.15s;
-    }
-    .boostrap_1:hover{
-        background-color:rgb(98, 62, 151);
-    }
-    .bootstrap_2{
-        background-color: white;
-        height: 50px;
-        width: 120px;
-        font-size: 16px;
-        color: rgb(108,117,125);
-        border-radius: 5px;
-        border-color: rgb(108,117,125);
-        cursor: pointer;
-        transition: background-color 0.15s, color 0.15s;
-    }
-    .bootstrap_2:hover{
-        background-color: rgb(108,117,125);
-        color: white;
-    }
-    .linkedin_1{
-        background-color: rgb(10,102,194);
-        color: white;
-        border: none;
-        height: 40px;
-        width: 250px;
-        font-size: 15px;
-        border-radius: 20px;
-        margin-right: 10px;
-        cursor: pointer;
-        transition: background-color 0.15s;
-    }
-    .linkedin_1:hover{
-        background-color: rgb(0, 46, 92);
-    }
-    .linkedin_2{
-        background-color: white;
-        color:rgb(10,102,194);
-        border-color: rgb(10,102,194);
-        height: 40px;
-        width: 100px;
-        font-size: 15px;
-        border-radius: 20px;
-        cursor: pointer;
-        border-style: solid;
-    }
-    .linkedin_2:hover{
-        border-width: 3px;
-        background-color: rgb(203, 233, 255);
-    }
-    .stock{
-        color: rgb(0,118,0);
-    }
-    .add_to_cart{
-        background-color: rgb(255,216,20);
-        height: 40px;
-        width: 120px;
-        border: none;
-        border-radius: 20px;
-        font-size: 14px;
-        cursor: pointer;
-        transition: background-color 0.15s, opacity 0.15s;
-    }
-    .add_to_cart:hover{
-        background-color: rgb(225, 169, 0);
-    }
-    .add_to_cart:active{
-        opacity: 0.4;
-    }
-    .buy_now{
-        background-color: rgb(255,164,28);
-        border: none;
-        height: 40px;
-        width: 120px;
-        font-size: 14px;
-        border-radius: 20px;
-        cursor: pointer;
-        margin-left: 10px;
-        transition: background-color 0.15s;
-    }
-    .buy_now:hover{
-        background-color: rgb(197, 118, 0);
-    }
-    .buy_now:active{
-        opacity: 0.4;
-    }
-    a{
-        color: rgb(0,113,133);
-    }
-    a:hover{
-        color: pink;
-    }
-</style>
-<p>YouTube ( Subscribe )</p>
-<button class="subscribe">Subscribe</button>
-<br><br>
-<hr>
-<p>YouTube ( JOIN )</p>
-<button class="join">JOIN</button>
-<br><br>
-<hr>
-<p>Twitter[Now known as ' X ' ] ( Tweet ) </p>
-<button class="twitter_button">Tweet</button>
-<br><br>
-<hr>
-<p> Uber ( Request Now )</p>
-<button class="Uber">Request Now</button>
-<br><br>
-<hr>
-<p>Amazon ( Add to Cart )</p>
-<button class="amazon">Add to Cart</button>.
-<br><br>
-<hr>
-<p>Github</p>
-<button class="github">Sign up</button>
-<br><br>
-<hr>
-<p>Bootstrap</p>
-<button class="boostrap_1">Get started</button>
-<button class="bootstrap_2">Download</button>
-<br><br>
-<hr>
-<p>LinkedIn</p>
-<button class="linkedin_1">Apply on company website</button>
-<button class="linkedin_2">Save</button>
-<br><br>
-<hr>
-<a href="https://www.amazon.in" target="_blank">Back to Amazon</a>
-<h1>Nike Black Running Shoes</h1>
-<p class="stock">$39 - in stock.</p>
-<p>Free delivery tomorrow.</p>
-<button class="add_to_cart">Add to Cart</button>
-<button class="buy_now">Buy Now</button>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buttons</title>
+        <link rel="stylesheet " href="styles/buttons.css">
+    </head>
+    <body>
+        <p>YouTube ( Subscribe )</p>
+        <button class="subscribe">Subscribe</button>
+        <br><br>
+        <hr>
+        <p>YouTube ( JOIN )</p>
+        <button class="join">JOIN</button>
+        <br><br>
+        <hr>
+        <p>Twitter[Now known as ' X ' ] ( Tweet ) </p>
+        <button class="twitter_button">Tweet</button>
+        <br><br>
+        <hr>
+        <p> Uber ( Request Now )</p>
+        <button class="Uber">Request Now</button>
+        <br><br>
+        <hr>
+        <p>Amazon ( Add to Cart )</p>
+        <button class="amazon">Add to Cart</button>.
+        <br><br>
+        <hr>
+        <p>Github</p>
+        <button class="github">Sign up</button>
+        <br><br>
+        <hr>
+        <p>Bootstrap</p>
+        <button class="boostrap_1">Get started</button>
+        <button class="bootstrap_2">Download</button>
+        <br><br>
+        <hr>
+        <p>LinkedIn</p>
+        <button class="linkedin_1">Apply on company website</button>
+        <button class="linkedin_2">Save</button>
+        <br><br>
+        <hr>
+        <a href="https://www.amazon.in" target="_blank">Back to Amazon</a>
+        <h1>Nike Black Running Shoes</h1>
+        <p class="stock">$39 - in stock.</p>
+        <p>Free delivery tomorrow.</p>
+        <button class="add_to_cart">Add to Cart</button>
+        <button class="buy_now">Buy Now</button>
+    </body>
+</html>
