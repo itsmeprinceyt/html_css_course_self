@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Properties</title>
+        <style>
+            .name, .email{
+                display: block;
+                width: 250px;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                padding-left: 5px;
+                padding-right: 5px;
+                margin-bottom: 5px;
+            }
+            .survey{
+                display:inline-block;
+                width: 200px;
+                margin-right:5px;
+                vertical-align:middle;
+            }
+            .google{
+                display:block;
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 0;
+            }
+            .search-bar{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 400px;
+                border: none;
+                border-radius: 20px;
+                margin-top: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right:10px;
+                padding-left: 15px;
+                box-shadow: 0px 1px 10px rgba(0,0,0, 0.5);
+            }
+            .first_name, .second_name{
+                width: 104px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                border-style: solid;
+                border-radius: 8px;
+                border-width: 1px;
+            }
+            .email{
+                display: block;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                border-style: solid;
+                border-radius: 8px;
+                border-width: 1px;
+            }
+            .sign_up{
+                font-family: Arial;
+                background-color: rgb(0, 123, 255);
+                border: none;
+                border-radius: 10px;
+                color: white;
+                font-weight: bold;
+                padding-left: 115px;
+                padding-right: 115px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .title_r{
+                font-family: Arial;
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+            .location, .destination{
+                display:block;
+                font-family: Arial;
+                background-color: rgb(175, 175, 175);
+                border: none;
+                width: 300px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-bottom: 7px;
+            }
+            .location::placeholder, .destination::placeholder{
+                color: rgb(42, 42, 42);
+            }
+            
+            .request-now{
+                margin-top: 20px;
+                background-color: black;
+                border: none;
+                color: white;
+                padding-top: 13px;
+                padding-bottom: 13px;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            .request-now:hover{
+                opacity: 0.8;
+            }
+            .schedule-for-later{
+                background-color: rgb(175, 175, 175);
+                border:none;
+                padding-top: 13px;
+                padding-bottom: 13px;
+                padding-left: 20px;
+                padding-right: 20px;
+                cursor: pointer;
+            }
+            .schedule-for-later:hover{
+                opacity: 0.8;
+            }
+        </style>
+    </head>
+    <body>
+        <input  class="name"type="text" placeholder="Name">
+        <input class="email"type="text" placeholder="Email">
+        <hr>
+        <p class="survey">Thanks for chatting with our customer support. Would you like to take our quicky survey? </p>
+        <button clas="yes">Yes</button>
+        <button class="no">No</button>
+        <hr>
+        <img  class="google"src="google.png">
+        <input class="search-bar" type="text" placeholder="Search Google or type a URL">
+        <br><br>
+        <hr>
+        <br><br>
+        <input class="first_name" type="text" placeholder="First Name">
+        <input class="second_name" type="text" placeholder="Second Name">
+        <input class="email" type="text" placeholder="Email">
+        <button class="sign_up">Sign Up</button>
+        <br><br><br>
+        <hr>
+        <br><br>
+        <p class="title_r">Request a ride now</p>
+        <input class="location" type="text" placeholder="Enter pickup location">
+        <input class="destination" type="text" placeholder="Enter destination">
+        <button class="request-now">Request Now</button>
+        <button class="schedule-for-later">Schedule for later</button>
+        <br><br><br>
+        <hr>
+    </body>
+</html>
