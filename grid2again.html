@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid - Ah shit here we go again!</title>
+        <style>
+            p{
+                font-family: Arial;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .grid{
+                display:grid;
+                grid-template-columns: 200px 200px 200px;
+                column-gap: 20px;
+                row-gap: 40px;
+            }
+            .profile-picture{
+                width: 100%;
+                object-fit: cover;
+                object-fit: center;
+            }
+            .name{
+                font-family: Arial;
+                font-size: 25px;
+                font-weight: bold;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .mutual-row{
+                display: grid;
+                grid-template-columns: 50px 1fr;
+                align-items: center;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+            .mutual-friend{
+                width: 100%;
+                border-radius: 50px;
+                margin-right: 4px;
+            }
+            .mutual-friend-text{
+                color: grey;
+                margin-left:10px;
+            }
+            .add-friend{
+                color: white;
+                background-color: rgb(24,119,242);
+                border: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 20px;
+                padding-left: 20px;
+                font-size: 16px;
+                border-radius: 4px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+            .add-friend:hover{
+                background-color: rgb(16, 99, 206);
+            }
+            .profile{
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="profile">
+                <img class="profile-picture" src="images/bocchi-pfp.jpg">
+                <p class="name">
+                    Hitori Gotoh
+                </p>
+                <div class="mutual-row">
+                    <img class="mutual-friend" src="images/kita-pfp.jpg">
+                    <p class="mutual-friend-text">
+                        3 mutual friends
+                    </p>
+                </div>
+                <button class="add-friend">Add Friend</button>
+            </div>
+            <div class="profile">
+                <img class="profile-picture" src="images/bocchi-pfp.jpg">
+                <p class="name">
+                    Hitori Gotoh
+                </p>
+                <div class="mutual-row">
+                    <img class="mutual-friend" src="images/kita-pfp.jpg">
+                    <p class="mutual-friend-text">
+                        3 mutual friends
+                    </p>
+                </div>
+                <button class="add-friend">Add Friend</button>
+            </div>
+            <div class="profile">
+                <img class="profile-picture" src="images/bocchi-pfp.jpg">
+                <p class="name">
+                    Hitori Gotoh
+                </p>
+                <div class="mutual-row">
+                    <img class="mutual-friend" src="images/kita-pfp.jpg">
+                    <p class="mutual-friend-text">
+                        3 mutual friends
+                    </p>
+                </div>
+                <button class="add-friend">Add Friend</button>
+            </div>
+            <div class="profile">
+                <img class="profile-picture" src="images/bocchi-pfp.jpg">
+                <p class="name">
+                    Hitori Gotoh
+                </p>
+                <div class="mutual-row">
+                    <img class="mutual-friend" src="images/kita-pfp.jpg">
+                    <p class="mutual-friend-text">
+                        3 mutual friends
+                    </p>
+                </div>
+                <button class="add-friend">Add Friend</button>
+            </div>
+            <div class="profile">
+                <img class="profile-picture" src="images/bocchi-pfp.jpg">
+                <p class="name">
+                    Hitori Gotoh
+                </p>
+                <div class="mutual-row">
+                    <img class="mutual-friend" src="images/kita-pfp.jpg">
+                    <p class="mutual-friend-text">
+                        3 mutual friends
+                    </p>
+                </div>
+                <button class="add-friend">Add Friend</button>
+            </div>
+            <div class="profile">
+                <img class="profile-picture" src="images/bocchi-pfp.jpg">
+                <p class="name">
+                    Hitori Gotoh
+                </p>
+                <div class="mutual-row">
+                    <img class="mutual-friend" src="images/kita-pfp.jpg">
+                    <p class="mutual-friend-text">
+                        3 mutual friends
+                    </p>
+                </div>
+                <button class="add-friend">Add Friend</button>
+            </div>
+        </div>
+    </body>
+</html>

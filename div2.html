@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Div Practise 2</title>
+        <style>
+            .tweet{
+                display: block;
+                width: 500px;
+                height: 60px;
+                border-width: 1px;
+                border-radius: 7px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-bottom: 20px;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+            }
+            .tweet-bocchi{
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+                border-radius: 25px;
+                vertical-align: middle;
+            }
+            .tweet-input{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+                width: 300px;
+                border: none;
+            }
+            .tweet-input::placeholder{
+                font-size: 17px;
+                font-weight: bold;
+            }
+            .tweet-button{
+                background-color: rgb(0, 145, 255);
+                border: none;
+                color: white;
+                font-weight: bold;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 25px;
+                padding-right: 25px;
+                border-radius: 30px;
+                transition: all 0.15s;
+            }
+            .tweet-button:hover{
+                background-color: rgb(0, 82, 145);
+            }
+            .profile{
+                width: 200px;
+                height: 320px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+                margin-bottom: 20px;
+            }
+            .profile2{
+                width: 200px;
+                height: 320px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+                margin-bottom: 20px;
+                display: inline-block;
+                margin-right: 20px;
+            }
+            .profile-picture{
+                width: 200px;
+                height: 190px;
+                object-fit: cover;
+                object-position: center;
+            }
+            .profile-name{
+                font-family: Arial;
+                font-weight: bold;
+                font-size: 20px;
+                padding-left: 10px;
+                padding-top: 10px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .profile-mutual{
+                font-family: Arial;
+                color: grey;
+                font-size: 17px;
+                padding-left: 10px;
+                padding-top: 0px;
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
+            .profile-button{
+                background-color: rgb(0, 123, 255);
+                border: none;
+                border-radius: 5px;
+                color: white;
+                font-size: 16px;
+                margin-top: 14px;
+                margin-left: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left:20px;
+                padding-right: 20px;
+                transition: all 0.15s;
+            }
+            .profile-button:hover{
+                opacity: 0.6;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tweet">
+            <img class="tweet-bocchi" src="images/bocchi.jpg">
+            <input class="tweet-input" type="text" placeholder="What's happening?">
+            <button class="tweet-button">Tweet</button>
+        </div>
+        <div class="profile">
+            <img class="profile-picture" src="images/bocchi.jpg">
+            <p class="profile-name">Hitori Gotoh</p>
+            <p class="profile-mutual">3 mutual friends</p>
+            <button class="profile-button">Add friend</button>
+        </div>
+        <hr>
+        <br><br>
+        <div class="profile2">
+            <img class="profile-picture" src="images/bocchi.jpg">
+            <p class="profile-name">Hitori Gotoh</p>
+            <p class="profile-mutual">3 mutual friends</p>
+            <button class="profile-button">Add friend</button>
+        </div>
+        <div class="profile2">
+            <img class="profile-picture" src="images/ryu.jpg">
+            <p class="profile-name">Ryo Yamada</p>
+            <p class="profile-mutual">3 mutual friends</p>
+            <button class="profile-button">Add friend</button>
+        </div>
+        <div class="profile2">
+            <img class="profile-picture" src="images/kita.jpg">
+            <p class="profile-name">Ikuyo Kita</p>
+            <p class="profile-mutual">3 mutual friends</p>
+            <button class="profile-button">Add friend</button>
+        </div>
+        <div class="profile2">
+            <img class="profile-picture" src="images/nijika.jpg">
+            <p class="profile-name">Nijika Ijichi</p>
+            <p class="profile-mutual">3 mutual friends</p>
+            <button class="profile-button">Add friend</button>
+        </div>
+    </body>
+</html>
