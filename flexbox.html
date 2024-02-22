@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox</title>
+        <style>
+            p{
+                margin: 0;
+                padding: 0;
+                font-family: Arial;
+            }
+            .container{
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+            }
+            .container2{
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .container3{
+                margin-top: 10px;
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border-style: solid;
+                border-color: grey;
+                border-width: 1px;
+                align-items: center;
+            }
+            .container4{
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-width: 1px;
+                border-style: solid;
+                border-radius: 4px;
+                border-color: grey;
+            }
+            .notification{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items:center;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            .noti{
+                background-color: rgb(0, 149, 255);
+                color: white;
+                border: none;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 12px;
+                padding-right: 12px;
+                border-radius: 30px;
+                font-weight: bold;
+            }
+            .noti:hover{
+                background-color: rgb(0, 94, 161);
+            }
+            .container5{
+                background-color: rgb(113, 34, 197);
+                display: flex;
+                height: 60px;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .left-section{
+                width: 100px;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+                padding-left: 20px;
+            }
+            .middle-section{
+                flex: 1;
+                max-width: 600px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            .search-bar{
+                width: 600px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                padding-right: 10px;
+                border-radius: 30px;
+                border-style: none;
+            }
+            .download-button{
+                border-style: solid;
+                border-color: white;
+                color: white;
+                border-radius: 2px;
+                font-size: 16px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-right: 20px;
+                background-color: rgb(113, 34, 197);
+                cursor: pointer;
+            }
+            .download-button:hover{
+                background-color: white;
+                color: rgb(113, 34, 197);
+            }
+            .container6{
+                border-radius: 5px;
+                border-color: grey;
+                border-style: solid;
+                border-width: 1px;
+            }
+            .profile{
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+            }
+            .photo-side{
+                width: 85px;
+            }
+            .name-side{
+                flex: 1;
+            }
+            .user-name{
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            .user-profession{
+                color: grey;
+                font-size: 15px;
+                margin-bottom: 5px;
+            }
+            .user-status{
+                color: grey;
+                font-size: 12px;
+            }
+            .follow-side{
+                background-color: black;
+            }
+            .imagee{
+                margin-left: 10px;
+                margin-top: 5px;
+                margin-right: 5px;
+                width: 60px;
+                border-radius: 50px;
+            }
+            .follow-button{
+                background-color: rgb(0, 98, 255);
+                color: white;
+                border: none;
+                margin-right: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 15px;
+                padding-left: 15px;
+                border-radius: 5px;
+            }
+            .follow-button:hover{
+                background-color: rgb(0, 76, 199);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div style="background-color: aqua;
+                width: 200px;
+            ">200px</div>
+            <div style="background-color: beige;
+                width: 75px;
+            ">75px</div>
+        </div>
+        <div class="container">
+            <div style="background-color: aqua;
+                width: 50px;
+            ">item1</div>
+            <div style="background-color: beige;
+                flex: 1;
+            ">item2</div>
+            <div style="background-color: pink;
+            width: 75px;
+        ">item3</div>    
+    </div>
+    <div class="container2">
+        <div style="background-color: aqua;
+        ">item1</div>
+        <div style="background-color: beige;
+        ">item2</div>
+        <div style="background-color: pink;      ">item3</div>
+        <div style="background-color: aqua;
+        ">item4</div>    
+    </div>
+    <div class="container3">
+        <div style="background-color: aqua;
+        ">item1</div>
+        <div style="background-color: beige;
+        ">item2</div>  
+    </div>
+    <hr>
+    <div class="container4">
+        <div class="notification">
+                <p>Home</p>
+                <button class="noti">14</button>
+        </div>
+        <div class="notification">
+            <p>Notifications</p>
+            <button class="noti">3</button>
+        </div>
+        <div class="notification">
+            <p>Messages</p>
+            <button class="noti">5</button>
+        </div>
+    </div>
+    <hr>
+    <div class="container5">
+        <div class="left-section">
+            <p class="home">Home</p>
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="Search">
+        </div>
+        <div class="right-section">
+            <button class="download-button">Download</button>
+        </div>
+    </div>
+    <hr>
+    <div class="container6">
+        <div class="profile">
+            <div class="photo-side">
+                <img class="imagee" src="images/bocchi-pfp.jpg">
+            </div>
+            <div class="name-side">
+                <p class="user-name">Hitori Gotoh</p>
+                <p class="user-profession">Guitarist</p>
+                <p class="user-status">Popular</p>
+            </div>
+            <div class="follow side"><button class="follow-button">Follow</button></div>
+        </div>
+        <div class="profile">
+            <div class="photo-side">
+                <img class="imagee" src="images/ryu-pfp.jpg">
+            </div>
+            <div class="name-side">
+                <p class="user-name">Ryo Yamada</p>
+                <p class="user-profession">Bass</p>
+                <p class="user-status">Popular</p>
+            </div>
+            <div class="follow side"><button class="follow-button">Follow</button></div>
+        </div>
+        <div class="profile">
+            <div class="photo-side">
+                <img class="imagee" src="images/nijika-pfp.jpg">
+            </div>
+            <div class="name-side">
+                <p class="user-name">Nijika</p>
+                <p class="user-profession">Drummer</p>
+                <p class="user-status">Popular</p>
+            </div>
+            <div class="follow side"><button class="follow-button">Follow</button></div>
+        </div>
+    </div>
+    </body>
+</html>
