@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nested Flexbox</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin-bottom: 100px;
+            }
+            p{
+                font-family: Roboto;
+            }
+            .container1{
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                margin-top: 10px;
+            }
+            .item1{
+                display: flex;
+                justify-content: center;
+                background-color: pink;
+                width: 100px;
+            }
+            .item1_p{
+                background-color: black;
+                color: white;
+            }
+            .item2_p{
+                background-color: black;
+                color: white;
+                margin: 0;
+            }
+            .item2{
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                width: 200px;
+                background-color: lightblue;
+            }
+            .row2{
+                display: flex;
+                justify-content: space-between;
+            }
+            .gmail-box{
+                display: flex;
+                height: 190px;
+                flex-direction: column;
+                border-radius: 5px;
+                border: none;
+                padding: 10px 10px 10px 10px;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+            }
+            .all-inboxes
+            {
+                margin: 0;
+                font-family: Roboto ,Arial;
+                font-size: 12px;
+                color: grey;
+                font-weight: 500;
+            }
+            .content{
+                height: 60px;
+            }
+            .inner-content{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .content-mini1{
+                width: 50px;
+                height: 60px;
+            }
+            .content-mini2{   
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+            }
+            .content-first
+            {
+                height: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: start;
+            }
+            .content-second{
+                height: 17px;
+            }
+            .content-third{
+                display: flex;
+                height: 14px;
+            }
+            .profile{
+                height: 40px;
+                border-radius: 30px;
+                margin-top: 10px;
+            }
+            .company{
+                margin-top: 2px;
+                margin-bottom: 0;
+                font-weight: bold;
+            }
+            .mail-time{
+                margin-top: 2px;
+                font-size: 9px;
+                color: grey;
+            }
+            .mail-topic{
+                margin: 0;
+                margin-bottom: 0;
+                font-weight: bold;
+                font-size: 13px;
+            }
+            .mail-content{
+                margin: 0;
+                font-size: 11px;
+                overflow:hidden;
+                text-overflow: ellipsis;
+                color: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container1">
+            <div class="item1">
+                <p class="item1_p">item1</p>
+            </div>
+            <div class="item2">
+            </div>
+        </div>
+        <div class="container1">
+            <div class="item1">
+            </div>
+            <div class="item2">
+                <div>hello</div>
+                <div class="row2">
+                    <div>row1</div>
+                    <div>row2</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="gmail-box">
+            <div class="title">
+                <p class="all-inboxes">ALL INBOXES</p>    
+            </div>
+            <div class="content">
+                <div class="inner-content">
+                    <div class="content-mini1">
+                    <img class="profile" src="images/bocchi-pfp.jpg">
+                    </div>
+                    <div class="content-mini2">
+                        <div class="content-first">
+                            <p class="company">Kosuke Band</p>
+                            <p class="mail-time">4:58 PM</p>
+                        </div>
+                        <div class="content-second">
+                            <p class="mail-topic">Biggest show of the year!</p>
+                        </div>
+                        <div class="content-third">
+                            <p class="mail-content">Hey there! We're writing to tell you about our upcoming show that will make you go nuts! Hoping to see you there!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="gmail-box">
+            <div class="title">
+                <p class="all-inboxes">ALL INBOXES</p>    
+            </div>
+            <div class="content">
+                <div class="inner-content">
+                    <div class="content-mini1">
+                        <img class="profile" src="images/bocchi-pfp.jpg">
+                        </div>
+                    <div class="content-mini2">
+                        <div class="content-first">
+                            <p class="company">Kosuke Band</p>
+                            <p class="mail-time">4:58 PM</p>
+                            </div>
+                        <div class="content-second">
+                            <p class="mail-topic">Biggest show of the year!</p>
+                            </div>
+                        <div class="content-third">
+                            <p class="mail-content">Hey there! We're writing to tell you about our upcoming show that will make you go nuts! Hoping to see you there!</p>
+                            </div>
+                                </div>
+                                    </div>
+        <div class="inner-content">
+        <div class="content-mini1">
+            <img class="profile" src="images/bocchi-pfp.jpg">
+            </div>
+        <div class="content-mini2">
+            <div class="content-first">
+                <p class="company">Kosuke Band</p>
+                <p class="mail-time">4:58 PM</p>
+                </div>
+            <div class="content-second">
+                <p class="mail-topic">Biggest show of the year!</p>
+</div>
+<div class="content-third">
+<p class="mail-content">Hey there! We're writing to tell you about our upcoming show that will make you go nuts! Hoping to see you there!</p>
+</div>
+</div>
+</div>
+<div class="inner-content">
+    <div class="content-mini1">
+        <img class="profile" src="images/bocchi-pfp.jpg">
+        </div>
+    <div class="content-mini2">
+        <div class="content-first">
+            <p class="company">Kosuke Band</p>
+            <p class="mail-time">4:58 PM</p>
+            </div>
+        <div class="content-second">
+            <p class="mail-topic">Biggest show of the year!</p>
+            </div>
+<div class="content-third">
+                        <p class="mail-content">Hey there! We're writing to tell you about our upcoming show that will make you go nuts! Hoping to see you there!</p>
+                        </div>
+                            </div>
+                                                                            </div>
+            </div>
+        </div>
+    </body>
+</html>

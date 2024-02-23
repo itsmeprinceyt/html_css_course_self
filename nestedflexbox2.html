@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tweet</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            p{
+                font-family: Roboto;
+            }
+            .container{
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                max-width: 370px;
+            }
+            .profile-div{
+                width: 50px;
+            }
+            .content-div{
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+            }
+            .profile{
+                height: 40px;
+                border-radius: 20px;
+                margin-left: 5px;
+                margin-top: 5px;
+            }
+            .first-line{
+                height: 30px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .name{
+                font-weight: bold;
+                font-size: 14px;
+            }
+            .username{
+                color: grey;
+                font-size: 13px;
+
+            }
+            .middle-line{
+                height: 50px;
+            }
+            .tweet-content{
+                margin: 0;
+                font-size: 14px;
+            }
+            .youtube-thumbnail{
+                background-color: rgb(194, 194, 194);
+                height: 92px;
+                width: 130px;
+                margin: -1px;
+                margin-bottom: 1px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 19px;
+            }
+            .youtube-info{
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .youtube-com{
+                font-size: 14px;
+                color: grey;
+                margin-bottom: 0;
+            }
+            .youtube-title{
+                font-size: 14px;
+                margin-bottom: 0;
+                margin-top:5px;
+            }
+            .last-line{
+                height: 90px;
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 20px;
+                border-color: rgb(194, 194, 194);
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="profile-div">
+                <img class="profile"src="images/bocchi.jpg">
+            </div>
+            <div class="content-div">
+                <div class="first-line">
+                    <p class="name">bocchi.the.rock</p>
+                    <p class="username">@HitoriGotoh</p>
+                </div>
+                <div class="middle-line">
+                    <p class="tweet-content">Showing my Guitar! A complete overview and review. New video is up!</p>
+                </div>
+                <div class="last-line">
+                    <div class="youtube-thumbnail">
+                    </div>
+                    <div class="youtube-info">
+                        <p class="youtube-com">youtube.com</p>
+                        <p class="youtube-title">Showing my Guitar! A complete overview and review (2021)</p>
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>
