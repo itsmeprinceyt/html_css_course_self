@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facebook Header</title>
+        <style>
+            .header{
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 45px;
+            }
+            .content{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+            .left-side{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+            }
+            .text{
+                font-family: Arial;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .profile{
+                height: 35px;
+                border-radius: 20px;
+            }
+            .add-friend{
+                background-color: rgb(2, 103, 255);
+                border: none;
+                color: white;
+                width: 85px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                border-radius: 5px;
+            }
+            .message{
+                background-color: rgb(192, 192, 192);
+                color: black;
+                font-weight: bold;
+                border: none;
+                width: 85px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                border-radius: 5px;
+                margin-left: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="content">
+                <div class="left-side">
+                    <img class="profile"src="images/kita-pfp.jpg">
+                    <p class="text">Kita</p>
+                </div>
+                <div class="right side">
+                    <button class="add-friend">Add Friend</button>
+                    <button class="message">Message</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position Fixed</title>
+        <style>
+            body{
+                margin-bottom: 3000px;
+            }
+            .fixed{
+                background-color: green;
+                color: white;
+                position: fixed;
+                top: 0px;
+                bottom: 0px;
+                right: 0px;
+                width: 100px;
+            }
+            .black{
+                background-color: rgba(0,0,0,0.8);
+                color: white;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .overlay{
+                background-color: white;
+                height: 134px;
+                width: 350px;
+                border-radius: 10px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .model, .model-text{
+                font-family: Arial;
+                color: black;
+            }
+            .model{
+                font-weight: bold;
+                font-size: 27px;
+                margin-bottom: 0px;
+            }
+            .model-text{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .model-button{
+                background-color: green;
+                border: none;
+                padding: 5px;
+                border-radius: 3px;
+                color: white;
+                transition: all 0.15s;
+            }
+            .model-button:hover{
+                background-color: rgb(0, 95, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fixed">
+            <p>right side bar</p>
+        </div>
+        <div class="black">
+            <div class="overlay">
+                <p class="model">Model Title</p>
+                <p class="model-text">This is a model</p>
+                <button class="model-button">Close</button>
+            </div>
+        </div>
+        
+    </body>
+</html>

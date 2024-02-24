@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Discord</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: #36393e;
+            }
+            p{
+                font-family: 'Open Sans', 'Helvetica Neue';
+            }
+            .server-side{
+                background-color: #1e2124;
+                position: fixed;
+                top:0;
+                bottom: 0;
+                left: 0;
+                width: 65px;
+            }
+            .server-list{
+                display: flex;
+                flex-direction: column;
+                width: 45px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding-top: 5px;
+                
+            }
+            .server{
+                margin-bottom: 4px;
+            }
+            .server-icon{
+                height: 45px;
+                border-radius: 25px;
+                transition: all 0.15s;
+                cursor: pointer;
+            }
+            .server-icon:hover{
+                border-radius: 15px;
+            }
+            .text-channels-side{
+                background-color: #282b30;
+                position: fixed;
+                top:0;
+                bottom: 0;
+                left: 65px;
+                width: 195px;
+            }
+            .text{
+                display: flex;
+                flex-direction: column;
+            }
+            .Info{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px;
+                height: 20px;
+            }
+            .info-text{
+                color: rgb(199, 199, 199);
+                font-weight: 700;
+                font-size: 10px;
+                transition: all 0.15s;
+                cursor: pointer;
+            }
+            .info-text:hover{
+                color: white;
+            }
+            .icon{
+                height: 20px;
+                border-radius: 10px;
+                filter: grayscale(100%);
+                color: rgb(169, 169, 169);
+                cursor: pointer;
+            }
+            .text-channels{
+                displaY: flex;
+                flex-direction: column;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                margin-top: 0;
+                cursor: pointer;
+            }
+            .text-channels-data{
+                font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: rgb(169, 169, 169);
+                margin: 0;
+                margin-bottom: 3px;
+                font-size: 14px;
+                font-weight: 400;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                text-align: start;
+            }
+            .text-channels-data:hover{
+                background-color: #2f3338;
+                border-radius: 4px;
+                color: rgb(218, 218, 218);
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="server-side">
+            <div class="server-list">
+                <div class="server">
+                    <img class="server-icon" src="images/nijika-pfp.jpg">
+                </div>
+                <div class="server">
+                    <img class="server-icon" src="images/ryu-pfp.jpg">
+                </div>
+                <div class="server">
+                    <img class="server-icon" src="images/bocchi-pfp.jpg">
+                </div>
+                <div class="server">
+                    <img class="server-icon" src="images/kita-pfp.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="text-channels-side">
+            <div class="text">
+                <div class="Info">
+                    <p class="info-text">INFO</p>
+                    <img class="icon" src="icons/add.png">
+                </div>
+                <div class="text-channels">
+                    <p class="text-channels-data"># new-videos</p>
+                    <p class="text-channels-data"># updates</p>
+                    <p class="text-channels-data"># faq</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
