@@ -1,0 +1,136 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Shop Now!</title>
+        <style>
+            .product{
+                display: grid;
+                grid-template-columns: 600px 600px;
+                column-gap: 20px;
+                row-gap: 20px;
+            }
+            .container{
+                width: 500px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+            }
+            .item{
+                position: relative;
+                height: 500px;
+                width: 500px;
+                z-index: 0;
+            }
+            .discount{
+                z-index: 1;
+                position: absolute;
+                top:20px;
+                right: 0;
+                background-color: white;
+                color: black;
+                font-family: Arial;
+                font-size: 28px;
+                padding: 15px;
+                padding-left: 20px;
+                padding-right: 20px;
+
+            }
+            .add-to-cart{
+                background-color: rgba(0, 0, 0, 0.5);
+                position: absolute;
+                z-index: 2;
+                width: 500px;
+                height: 120px;
+                bottom: 0;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+
+            }
+            .button{
+                display: flex;
+                justify-content: center;
+                margin: 35px ;
+            }
+            .add-to-cart-button{
+                background-color: black;
+                color: white;
+                font-weight: 500;
+                border: none;
+                border-radius: 2px;
+                font-family: Arial;
+                font-size: 20px;
+                padding: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
+                transition: all 1s;
+            }
+            .add-to-cart-button:hover{
+                font-size: 20px;
+                color: black;
+                background-color: white;
+            }
+            .ear-ring{
+                border-radius: 5px;
+                height: 500px;
+                width: 500px;
+                object-fit: cover;
+                object-position: top;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="product">
+            <div class="container">
+            <div class="item">
+                <div class="add-to-cart">
+                    <div class="button">
+                        <button class="add-to-cart-button">Add to Cart</button>
+                    </div>
+                </div>
+                <img class="ear-ring" src="images/ear-ring.jpg">
+                <div class="discount">
+                    20% OFF
+                </div>
+            </div>
+            </div>
+            <div class="container">
+                <div class="item">
+                    <div class="add-to-cart">
+                        <div class="button">
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <img class="ear-ring" src="images/ring.jpg">
+                    <div class="discount">
+                        35% OFF
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="item">
+                    <div class="add-to-cart">
+                        <div class="button">
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <img class="ear-ring" src="images/necklace.jpg">
+                    <div class="discount">
+                        50% OFF
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="item">
+                    <div class="add-to-cart">
+                        <div class="button">
+                            <button class="add-to-cart-button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <img class="ear-ring" src="images/hand.jpg">
+                    <div class="discount">
+                        40% OFF
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

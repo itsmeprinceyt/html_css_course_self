@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Absolute • Relative</title>
+        <style>
+            body{
+                margin-bottom: 3000px;
+            }
+            .container-grey{
+                height: 180px;
+                background-color: grey;
+                width: 320px;
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+            }
+            .close-page{
+                position: absolute;
+                top: -15px;
+                left: -15px;
+                font-family: Arial;
+                background-color: black;
+                color: white;
+                padding-left: 17px;
+                padding-right: 17px;
+                padding-top: 13px;
+                padding-bottom: 13px;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+            .close-page:hover{
+                background-color: rgb(153, 153, 153);
+                color: white;
+            }
+            .time-stamp{
+                position: absolute;
+                bottom:10px;
+                right: 10px;
+                font-family: Arial;
+                background-color: black;
+                color: white;
+                font-size: 13px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 8px;
+                padding-right: 8px;
+                border-radius: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-grey">
+            <div class="close-page">
+                X
+            </div>
+            <div class="time-stamp">
+                0:29
+            </div>
+        </div>
+    </body>
+</html>
