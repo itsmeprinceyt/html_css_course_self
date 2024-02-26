@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YouTube Tile</title>
+        <style>
+            p{
+                font-family: Arial;
+                margin: 0;
+            }
+            .container{
+                display: grid;
+                height: 500px;
+                grid-template-columns: 1fr 1fr 1fr;
+                row-gap: 10px;
+                column-gap: 10px;
+                vertical-align: top;
+            }
+            .video-tile{
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                row-gap: 15px;
+                align-items: top;
+                width: 320px;
+            }
+            .upper{
+                position: relative;
+                border-radius: 10px;
+            }
+            .down{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: top;
+            }
+            .time{
+                position: absolute;
+                right: 10px;
+                bottom: 14px;
+                font-family: Arial;
+                color: white;
+                background-color: rgba(0,0,0,0.8);
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-left: 6px;
+                padding-right: 6px;
+                border-radius: 4px;
+            }
+            .img{
+                width: 320px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            .profile:hover .hover{
+                opacity: 1;
+            }
+            .profile{
+                width: 90px;
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                position: relative;
+            }
+            .meta-data{
+                width: 230px;
+            }
+            .profile_photo{
+                width: 50px;
+                height: 50px;
+                border-radius: 30px;
+            }
+            .title{
+                font-weight: bold;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            .author,
+            .views{
+                color: rgb(33, 33, 33);
+                font-size: 14px;
+                margin-bottom: 7px;
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+            a:visited{
+                color: black;
+            }
+            .hover{
+                z-index: 10;
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                column-gap: 10px;
+                padding: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                position: absolute;
+                top: 60px;
+                left: 20px;
+                width: 190px;
+                border-radius:  7px;
+                box-shadow: 0px 0px 12px rgba(0,0,0,0.5);
+                opacity: 0;
+                transition: all 0.15s;
+                pointer-events: none;
+            }
+            .hover:hover{
+                opacity: 1;;
+            }
+            .channel-name{
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            .channel-subscribers{
+                font-size: 13px;
+                color: grey;
+            }
+            .profile_photo2{
+                width: 50px;
+                height: 50px;
+                border-radius: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="video-tile">
+                <div class="upper">
+                    <div class="time">13:45</div>
+                    <a href="https://www.youtube.com/watch?v=_vjNAS6r7aQ">
+                    <img class="img"src="final/thumbnail.webp"></a>
+                </div>
+                <div class="down">
+                    <div class="profile">
+                        <a href="https://www.youtube.com/@ItsMePrince0"><img class="profile_photo"src="final/profile.jpg"></a>
+                        <div class="hover">
+                            <div>
+                                <img class="profile_photo2"src="final/profile.jpg">
+                            </div>
+                            <div>
+                                <p class="channel-name">ItsMe Prince 0</p>
+                                <p class="channel-subscribers">1280 subscribers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meta-data">
+                        <a href="https://www.youtube.com/watch?v=_vjNAS6r7aQ"><p class="title">[Hindi] So You want to build NINGGUANG❤️? Full Kit ...</p></a>
+                        <a href="https://www.youtube.com/@ItsMePrince0"><p class="author">ItsMe Prince 0</p></a>
+                        <p class="views">470 views &#8226; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
