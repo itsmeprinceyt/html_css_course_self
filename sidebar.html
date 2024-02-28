@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SideBar</title>
+        <style>
+            body{
+                font-family: Arial;
+                margin-left: 200px;
+                margin-top: 70px;
+            }
+            p{
+                margin:0;
+            }
+            .top-footer{
+                display: flex;
+                position: absolute;
+                justify-content: start;
+                align-items: center;
+                padding-left: 20px;
+                color: black;
+                font-weight: bold;
+                top: 0px;
+                bottom: 50px;
+                left: 180px;
+                height: 50px;
+                right: 0px;
+                background-color: greenyellow;
+                z-index: 100;
+                transition: all 0.05s;
+            }
+            .side-bar{
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                position: absolute;
+                width: 50px;
+                top: 0;
+                left: 0;
+                bottom: 0px;
+                transition: all 0.05s;
+            }
+            .side-bar div{
+                background-color: white;
+                z-index: 99;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 160px;
+                height: 90px;
+                border: 1px solid rgba(0,0,0,0.3);
+                justify-content: start;
+                padding-left: 20px;
+                gap: 20px;
+                transition: all 0.05s;
+            }
+            .side-bar div:hover{
+                background-color: rgb(255, 208, 208);
+            }
+            .element{
+                display: flex;
+                flex-direction: column
+            }
+            @media (max-width: 768px){
+                body{
+                    margin-left: 75px;
+                }
+                .top-footer{
+                    left: 51px;
+                }
+                .side-bar div{
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 0;
+                width: 50px;
+                height: 90px;
+                border: 1px solid rgba(0,0,0,0.3);
+                transition: all 0.15s;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <section class="top-footer">
+                You Usually Have Your stuff Over Here Like Logo, Search bar, stuff
+            </section>
+        </nav>
+        <nav>
+            <section class="side-bar">
+                <div class="main">
+                    <p>•</p>
+                    <p>Menu</p>    
+                </div>
+                <div class="element">
+                    <p>A</p>
+                    <p>Profile</p>    
+                </div>
+                <div class="element">
+                    <p>B</p>
+                    <p>Setting</p>    
+                </div>
+                <div class="element">
+                    <p>C</p>
+                    <p>Help</p>    
+                </div>
+                <div class="element">
+                    <p>D</p>
+                    <p>Contact</p>    
+                </div>
+                <div class="element">
+                    <p>E</p>
+                    <p>Text</p>    
+                </div>
+                <div class="element">
+                    <p>F</p>
+                    <p>Text</p>    
+                </div>
+            </section>
+        </nav>
+        <main>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptas vitae atque illo ut dignissimos repudiandae aut est animi fuga ea ducimus accusantium obcaecati laboriosam officia eaque laborum labore, perferendis incidunt voluptatum sed saepe perspiciatis facere debitis? Praesentium, alias soluta sunt odio, vero eos delectus maxime, vitae fugiat est eaque.</p>
+        </main>
+    </body>
+</html>
